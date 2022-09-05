@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="wrap"> <p th:text="'Hello, ' + ${name} + '!'" /> </div>
+<a  href="/two">Страница итогов</a>
+<form method="post" action="/two">
+<input type="number" name="one" id="one"/>
+    <select name="two" id="two">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <input type="number" name="three" id="three"/>
+    <input  type="submit" value="Подсчет"/>
+</form>
+</body>
+</html>
